@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 800px;
+            height: 500px;
+            border: 5px solid gray ;
+            display: grid;
+            gap: 10px;
+            background-color: rgb(8, 22, 22);
+            grid-template-areas: "header header header" "sidebar content-1 content-1" "sidebar content-2 content-3" "footer footer footer";
+        }
+        .header{
+            background-color: blueviolet;
+            grid-area: header;
+        }
+        .sidebar{
+            background-color: aquamarine;
+            grid-area: sidebar;
+        }
+        .content-1{
+            background-color: blueviolet;
+            grid-area: content-1;
+        }
+         .content-2{
+            background-color: brown;
+            grid-area: content-2;
+        }
+         .content-3{
+            background-color: aquamarine;
+            grid-area: content-3;
+        }
+        .footer{
+            background-color: chocolate;
+            grid-area: footer;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box content-1">Content-1</div>
+        <div class="box content-2">Content-2</div>
+        <div class="box content-3">Content-3</div>
+        <div class="box footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalportfolio</title>
+    <style>
+        .container{
+          padding:10px;
+          /* margin: 10px; */
+          border: 5px solid black;
+        }
+        h1{
+            color: rgb(119, 24, 215);
+            text-align: center;
+            text-decoration:underline;
+            font-size: 64px;
+            font-weight:800px;
+
+        }
+        h3{
+            color: cornflowerblue;
+            text-align: center;
+            letter-spacing: 5px;
+            word-spacing: 10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        pre{
+            color: brown;
+            text-align: center;
+        }
+        .labelclass{
+            color: rgb(97, 148, 220);
+        }
+        #textarea-1{
+            background-color: rgb(196, 188, 179);
+        }
+        #btn-1{
+            background-color: rgb(17, 130, 242);
+            color: aliceblue;
+        }
+      body{
+        background-color: beige;
+      }
+      #tbl-1{
+        background-color: rgb(198, 201, 207);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #btn-1:hover{
+        background-color: rgb(23, 82, 177);
+      }
+      input[type="text"]{
+        color: blueviolet;
+      }
+      input::placeholder{
+        color: brown;
+      }
+      form{
+        text-align: center;
+      }
+      fieldset{
+        margin-left: 20%;
+        margin-right: 20%;
+      }
+      img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+       <h1>Rahul</h1>
+        <pre>MCA Graduate | Web Developer</pre>
+        <hr>
+      <nav>
+        <a href=""> <p>Home</p></a>
+        <a href=""> <p>Projects</p></a>
+        <a href=""> <p>Cotact</p></a>
+        <a href=""> <p>About Me</p></a>
+      </nav>
+       
+       
+        <hr>
+        <img src="/images/Rahul profile picture.jpg" alt="" height="300px">
+        <hr>
+        <h3>About Me</h3>
+        <p>Hello! I am a passionate developer skilled in 
+            HTML, CSS, JavaScript and React.I recently
+             completed my MCA from Kurukshetra University 
+             and love building modern web applications.</p>
+             <hr>
+             <h3>Projects</h3>
+             <table border="1" id="tbl-1">
+                <thead>
+                    <tr>
+                        <th>Projects</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Movie App</td>
+                        <td>A React-based app that fetches IMDB movie info using API.</td>
+                    </tr>
+                    <tr>
+                        <td>E-commerce site</td>
+                        <td> Built using Next.js, Stripe, and TypeScript.</td>
+                    </tr>
+                    <tr>
+                        <td>Art Gallery</td>
+                        <td>Creative gallery layout with parallax effects (in progress).</td>
+                    </tr>
+                </tbody>
+             </table>
+             <hr>
+             <fieldset>
+                <legend><h3>Skills</h3></legend>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                </ul>
+             </fieldset>
+             <hr>
+             <h3>Contact Details</h3>
+             <pre>Email: abcdef@gmail.com</pre>
+             <pre>Phone: +91-1234567890</pre>
+             <pre>LinkedIn: <a href="https://www.linkedin.com/in/rahul-jasoria-45aa07301/">My LinkedIn</a></pre>
+             <pre>Github: <a href="https://github.com/rahuljasoria123">My Github</a></pre>
+             <hr>
+             <h3>Contact Me</h3>
+             <form action="">
+                <label for="name" class="labelclass">Name</label>
+                <input type="text" placeholder="Your Name">
+                <br><br>
+                <label for="email" class="labelclass">Email</label>
+                <input type="text" placeholder="Your email">
+                <br><br>
+                <textarea name="" id="textarea-1" placeholder="Write message here..."></textarea>
+                <br>
+                <button id="btn-1" >Send</button>
+
+             </form>
+             <hr>
+             <pre>&copy 2025 Rahul Jasoria</pre>
+    </div>
+</body>
+</html>
